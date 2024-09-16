@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connecté</title>
+</head>
+<body>
+    <h1>Vous êtes connecté avec succès !</h1>
+
+    <!-- Affichage des informations de l'utilisateur -->
+    <h2>Informations de l'utilisateur :</h2>
+    <p><strong>Nom :</strong> <%= user.fullname || user.displayName %></p>
+    <p><strong>Email :</strong> <%= user.emailaddress1 || user.mail || user.userPrincipalName %></p>
+    <p><strong>ID Utilisateur (CRM) :</strong> <%= user.contactid || user.id %></p>
+
+</body>
+</html>
